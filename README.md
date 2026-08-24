@@ -1,16 +1,17 @@
 # Redox Tap
 
-## How do I install these formulae?
+## How do I install these formulae and casks?
 
-`brew install redox/tap/<formula>`
+`brew install --cask redox/tap/<cask>`
 
-Or `brew tap redox/tap` and then `brew install <formula>`.
+Or `brew tap redox/tap` and then `brew install --cask <cask>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "redox/tap"
-brew "<formula>"
+cask_args appdir: "/Applications"
+cask "<cask>"
 ```
 
 ## Documentation
